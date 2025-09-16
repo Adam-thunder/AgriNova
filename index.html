@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgriDoctor Plus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 AgriDoctor Plus</h1>
+    <p>Your AI-powered farming assistant</p>
+  </header>
+
+  <main>
+    <!-- 🌍 AI Assistant -->
+    <section>
+      <h2>🤖 AI Assistant</h2>
+      <div class="chat-container">
+        <select id="langSelect">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+          <option value="ml">മലയാളം</option>
+        </select>
+        <input type="text" id="userInput" placeholder="Ask your farming question...">
+        <button onclick="askAI()">Ask</button>
+      </div>
+      <div id="chatBox" class="chat-box"></div>
+    </section>
+
+    <!-- 🌦 Weather -->
+    <section>
+      <h2>🌦 Weather Forecast</h2>
+      <input type="text" id="cityInput" placeholder="Enter city">
+      <button onclick="getWeather()">Get Weather</button>
+      <div id="weatherBox" class="info-box"></div>
+    </section>
+
+    <!-- 🚨 Dam Alerts -->
+    <section>
+      <h2>🚨 Dam Alerts</h2>
+      <div id="damBox" class="info-box"></div>
+    </section>
+
+    <!-- 🛒 Marketplace -->
+    <section>
+      <h2>🛒 Marketplace</h2>
+      <div id="marketBox" class="info-box"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AgriDoctor Plus | Smart India Hackathon Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
